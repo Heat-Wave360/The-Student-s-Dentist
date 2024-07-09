@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="book-online.css">
+    <title>Book Online | The Student's Dentist</title>
+</head>
+<body>
+    <div class="header">
+        <h1>The Student's Dentist</h1>
+    </div>
+    <div class="book-online">
+        <h2>Book Online</h2>
+        <form action="success.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Time:</label><br>
+            <select id="time" name="time" required>
+                <option value="8:00">8:00 am</option>
+                <option value="9:00">9:00 am</option>
+                <option value="10:00">10:00 am</option>
+                <option value="11:00">11:00 am</option>
+                <option value="12:00">12:00 pm</option>
+                <option value="1:00">1:00 pm</option>
+                <option value="2:00">2:00 pm</option>
+                <option value="3:00">3:00 pm</option>
+            </select><br>
+            <input type="submit" value="Book Appointment">
+        </form>
+    </div>
+</body>
+</html>

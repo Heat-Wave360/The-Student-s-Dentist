@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Only Page</title>
+    <link rel="stylesheet" href="Staff_Only.css"> <!-- link to your CSS file -->
+</head>
+<body>
+    <h1>Staff</h1>
+    <h2>List of Patients</h2>
+    <ul id="patient-list"></ul>
+    <h2>Future Appointments</h2>
+    <ul id="future-appointment-list"></ul>
+    <h2>Past Appointments</h2>
+    <ul id="past-appointment-list"></ul>
+    <script>
+        const patientList = document.getElementById('patient-list');
+        const futureAppointmentList = document.getElementById('future-appointment-list');
+        const pastAppointmentList = document.getElementById('past-appointment-list');
+
+        // Sample data for demonstration purposes
+        const patients = [
+            { id: 1, name: 'John Doe' },
+            { id: 2, name: 'Jane Smith' },
+            { id: 3, name: 'Bob Johnson' },
+            { id: 4, name: 'Samuel Ray' },
+            { id: 5, name: 'Duke Den' },
+            { id: 6, name: 'Matthew Luke' },
+        ];
+
+        const futureAppointments = [
+            { id: 4, patientId: 4, date: '2024-09-01' },
+            { id: 5, patientId: 5, date: '2024-011-05' },
+            { id: 6, patientId: 6, date: '2025-01-08' },
+        ];
+
+        const pastAppointments = [
+            { id: 1, patientId: 1, date: '2023-06-028' },
+            { id: 2, patientId: 2, date: '2024-04-016' },
+            { id: 3, patientId: 3, date: '2024-05-08' },
+        ];
+
+        // Add patients to the list
+        patients.forEach(patient => {
+            const listItem = document.createElement('li');
+            listItem.textContent = patient.name;
+            patientList.appendChild(listItem);
+        });
+
+        // Add future appointments to the list
+        futureAppointments.forEach(appointment => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Patient ${appointment.patientId} - ${appointment.date}`;
+            futureAppointmentList.appendChild(listItem);
+        });
+
+        // Add past appointments to the list
+        pastAppointments.forEach(appointment => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Patient ${appointment.patientId} - ${appointment.date}`;
+            pastAppointmentList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>

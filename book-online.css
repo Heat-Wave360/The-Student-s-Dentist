@@ -1,0 +1,40 @@
+.book-online {
+    background-color: #C4A484;
+    padding: 45px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-online h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.book-online label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.book-online input,
+.book-online select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.book-online input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.book-online input[type="submit"]:hover {
+    background-color: #333;
+}
